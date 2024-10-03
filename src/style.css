@@ -1,0 +1,11 @@
+li {
+  background-color: goldenrod;
+  height: 28px;
+  width: 90px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px black;
+  text-align: center;
+  padding-top: 5px;
+  color: wheat;
+  text-shadow: 5px 5px 3px black;
+}

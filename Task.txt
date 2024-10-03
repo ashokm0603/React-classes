@@ -1,0 +1,46 @@
+import React, { Component } from "react";
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      prime: 2, // Start with the first prime number
+    };
+  }
+  // Function to check if a number is prime
+  isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0) return false;
+    }
+    return true;
+  }
+  // Function to get the next prime number
+  getNextPrime(currentPrime) {
+    let nextNumber = currentPrime + 1;
+    while (!this.isPrime(nextNumber)) {
+      nextNumber++;
+    }
+    return nextNumber;
+  }
+  // Handle button click to get and display the next prime number
+  handleClick = () => {
+    this.setState((prevState) => ({
+      prime: this.getNextPrime(prevState.prime),
+    }));
+  };
+  render() {
+    return (
+      <div style={{ textAlign: "center", marginTop: "50px" }}>
+        <h1>Prime Number Generator</h1>
+        <h2>Current Prime: {this.state.prime}</h2>
+        <button
+          onClick={this.handleClick}
+          style={{ padding: "10px 20px", fontSize: "16px" }}
+        >
+          Get Next Prime
+        </button>
+      </div>
+    );
+  }
+}
+export default App;

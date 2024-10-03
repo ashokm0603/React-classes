@@ -1,0 +1,26 @@
+* {
+  text-decoration-line: none;
+}
+ol {
+  height: 90px;
+  background-image: linear-gradient(magenta, powderblue);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+li {
+  font-size: 25px;
+  text-decoration-line: none;
+  background-color: goldenrod;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  padding-top: 2px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  box-shadow: 5px 5px 5px black;
+}

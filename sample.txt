@@ -1,0 +1,39 @@
+Components in react:
+-> Component are the single single UI blocks
+-> Component are reuseable 
+-> Component are use to maintain 
+
+In react are two types of components:
+ 1. function based components
+ 2. class based components
+
+ probs  :
+ -------
+ ->probs are use to transfer the data from component another component
+ ->probs are looks like HTML attributes
+ ->probs are immutable in nature
+ ->probs are unidirectional data flow
+
+ Example for probs in Function based Components:
+ Example for probs in class based Components :
+
+
+ States :
+ --------
+ ->States are used to hold the data 
+ ->States are mutable in nature
+ ->States are present in class based Components
+ 
+ ->We can write states in two ways :
+ 1. constructors way 
+ 2. object
+
+ 
+
+Forms :
+--------
+1. controlled forms 
+2. uncontrolled forms
+
+
+Router :
